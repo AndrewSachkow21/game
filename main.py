@@ -2,7 +2,7 @@ import sys
 import pygame as pg
 
 class AllienInvasion:
-    "skibidi dop dop dop ye ye dabydi neep neep neep neeeep(repeat)"
+    "skibidi dop dop ddsop ye ye dabydi neep neep neep neeeep(repeat)"
     def __init__(self):
         pg.init()
         self.screen = pg.display.set_mode((1200,800))
