@@ -1,20 +1,23 @@
 import sys
-import pygame
+import pygame as pg
 
 class AllienInvasion:
     "skibidi dop dop dop ye ye dabydi neep neep neep neeeep(repeat)"
     def __init__(self):
-        pygame.init()
+        pg.init()
 
-        self.screen = pygame.display.set_mode((1200,800))
-        pygame.display.set_caption("Allien Invasion")
+        self.screen = pg.display.set_mode((1200,800))
+        pg.display.set_caption("Allien Invasion")
+
+        self.bg_color  =(230,230,230)
 
     def run_game(self):
         while True:
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
+            for event in pg.event.get():
+                if event.type == pg.QUIT:
                     sys.exit()
-            pygame.display.flip()
+            self.screen.fill(self.bg_color)
+            pg.display.flip()
 
 if  __name__ == '__main__':
     ai = AllienInvasion()
